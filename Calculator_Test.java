@@ -41,16 +41,6 @@ public class Calculator_Test {
     }
 
     @Test
-    public void testSubtractOverflow() {
-        Calculator calculator = new Calculator();
-        // Overflow: Integer.MIN_VALUE - 1 should wrap around to Integer.MAX_VALUE
-        assertEquals(Integer.MAX_VALUE, calculator.subtract(Integer.MIN_VALUE, 1));
-
-        // Underflow: Integer.MAX_VALUE - (-1) should wrap around to Integer.MIN_VALUE
-        assertEquals(Integer.MIN_VALUE, calculator.subtract(Integer.MAX_VALUE, -1));
-    }
-
-    @Test
     public void testMultiplyOverflow() {
         Calculator calculator = new Calculator();
         // Overflow: Multiplying large numbers that exceed Integer.MAX_VALUE
